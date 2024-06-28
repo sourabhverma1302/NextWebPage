@@ -34,10 +34,8 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
           {children}
-          <Banner />
         </div>
       </body>
     </html>
   )
 }
- 

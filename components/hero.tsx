@@ -24,8 +24,12 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">Landing template for startups</h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+            <h1 className="h1 mb-4" data-aos="fade-up">Welcome to Garg Traders</h1>
+            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Antize Foods Pvt Ltd has 16 Years of Vast & Quality experience in Import, C&F Agent, Super Stockiest & Direct Distribution in Modern Trade, E-Commerce, Government Organizations & Premium Standalone Outlets in INDIA
+              The company is headed by Mr. Sushil Garg previously worked in Reliance Industries having 30 years of experience and also have quality Experience in Retail from FUTURE RETAIL LTD (No 1 Retail Company in India).
+              The Company is managed and run by qualified professionals with various industries experience.
+              It has an association with many renowned Brands for Indian Market.</p>
+            <h1 className="h3 mb-4 text-blue-600" data-aos="fade-up">(A Trusted Name In MT Business Since 2007)</h1>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Start free trial</a>

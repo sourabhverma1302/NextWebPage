@@ -5,6 +5,17 @@ import FeatImage02 from '@/public/images/features-03-image-02.png'
 import FeatImage03 from '@/public/images/features-03-image-03.png'
 
 export default function Zigzag() {
+  const data = [
+    { id: 1, retailer: "RELIANCE FRESH", company: "RELIANCE RETAIL LTD", outlets: 25 },
+    { id: 2, retailer: "MORE SUPER", company: "ADITYA BIRLA RETAIL LTD", outlets: 80 },
+    { id: 3, retailer: "EASY DAY", company: "FUTURE RETAIL LTD", outlets: 500 },
+    { id: 4, retailer: "VISHAL", company: "AIRPLAZA RETAIL HOLDINGS PVT LTD", outlets: 35 },
+    { id: 5, retailer: "D MART", company: "AVENUE SUPERMARTS LTD", outlets: 72 },
+    { id: 6, retailer: "MUNAFA MART", company: "GPA RETAIL PVT LTD", outlets: 6 },
+    { id: 7, retailer: "MARKET 99", company: "MARKET NINTYNINE PVT LTD", outlets: 30 },
+    { id: 8, retailer: "SUPER 99", company: "SNNR PVT LTD", outlets: 30 },
+    { id: 9, retailer: "BEHTAR", company: "BENEFIZIO TRADING PVT LTD", outlets: 20 },
+  ];
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -30,7 +41,7 @@ export default function Zigzag() {
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2">More speed. Less spend</div>
-                  <h3 className="h3 mb-3">Keep projects on schedule</h3>
+                  <h3 className="h3 mb-3">Keep projects on schedulee</h3>
                   <p className="text-xl text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
@@ -96,7 +107,27 @@ export default function Zigzag() {
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage03} width={540} height={405} alt="Features 03" />
+                {/* <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage03} width={540} height={405} alt="Features 03" /> */}
+                <div className="container mx-auto p-4">
+                  <table className="min-w-full bg-#151719" style={{ fontSize: '13px' }}>
+                    <thead>
+                      <tr className="text-left">
+                        <th className="py-2 px-2">S. No.</th>
+                        <th className="py-2 px-2">Retailers</th>
+                        <th className="py-2 px-2">Companies</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data.map((item, index) => (
+                        <tr key={item.id} className="text-left border-b">
+                          <td className="py-2 px-2">{index + 1}</td>
+                          <td className="py-2 px-2">{item.retailer}</td>
+                          <td className="py-2 px-2">{item.company}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">

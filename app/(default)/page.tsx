@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Home - Open PRO',
+  title: 'Garg Traders',
   description: 'Page description',
 }
 

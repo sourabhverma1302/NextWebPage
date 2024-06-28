@@ -1,0 +1,9 @@
+.garg_logo {
+    /* filter: invert(1); */
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}
+
+.fadeOut {
+    opacity: 0;
+}

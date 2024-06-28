@@ -60,6 +60,19 @@ export default function MobileMenu() {
         style={mobileNavOpen ? { maxHeight: mobileNav.current?.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: 0.8 }}
       >
         <ul className="bg-gray-800 px-4 py-2">
+
+          {/* <div className='flex items-center justify-between gap-10 cursor-pointer' data-aos="fade-up">
+            <h1>Home</h1>
+            <h1>About Us</h1>
+            <h1>Distribution Network</h1>
+            <h1>Retail Formats</h1>
+            <h1>Contact Us</h1>
+          </div> */}
+          <li>
+            <Link href="/signin" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+              Home
+            </Link>
+          </li>
           <li>
             <Link href="/signin" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
               Sign in
