@@ -9,6 +9,7 @@ import Banner from '@/components/banner';
 import Features from '@/components/features';
 import Hero from '@/components/hero';
 import AboutUs from '@/components/aboutus';
+import ResetPassword from './(auth)/reset-password/page';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -37,15 +38,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
-          <BrowserRouter>
-          <Header />
-          <Routes>
-            <Route path='/' element={<Hero />}/>
-            <Route path='/distribution-network' element={<Features />}/>
-            <Route path='/aboutus' element={<AboutUs />}/>
-          </Routes>
-          </BrowserRouter>
-          {/* {children} */}
+          <Header/>
+          {children}
         </div>
       </body>
     </html>

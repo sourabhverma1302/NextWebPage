@@ -11,7 +11,6 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
   const [isFadedOut, setIsFadedOut] = useState(false);
-  const navigate=useNavigate()
 
   useEffect(() => {
     // Start the fade-out effect when the component mounts
@@ -30,7 +29,7 @@ export default function Header() {
           <div className="shrink-0 mr-4" data-aos="fade-up">
             {/* Logo */}
             <Link href="/" aria-label="Cruip">
-              <Image onClick={()=>{navigate('/')}} src={gargLogo} alt='garg_logo' className={`garg_logo`} />
+              <Image src={gargLogo} alt='garg_logo' className={`garg_logo`} />
             </Link>
           </div>
 
@@ -39,11 +38,11 @@ export default function Header() {
           <nav className="flex items-center justify-center" >
             {/* Desktop sign in links */}
             <div className='flex items-center gap-12 cursor-pointer' data-aos="fade-up">
-              <h1 onClick={()=>{navigate('/')}}>Home</h1>
-              <h1 onClick={()=>{navigate('/aboutus')}}>About Us</h1>
-              <h1 onClick={()=>{navigate('/distribution-network')}}>Distribution Network</h1>
-              <h1>Retail Formats</h1>
-              <h1>Contact Us</h1>
+              <Link href={'/'}>Home</Link>
+              <Link href={'/aboutus'}>About Us</Link>
+              <Link href={'/distribution-network'}>Distribution Network</Link>
+              {/* <Link>Retail Formats</Link>
+              <Link>Contact Us</Link> */}
             </div>
           </nav>
           {/* <ul className="flex flex-wrap items-center justify-center px-20" data-aos="fade-up">
