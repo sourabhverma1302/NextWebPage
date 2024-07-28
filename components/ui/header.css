@@ -2,6 +2,8 @@
     /* filter: invert(1); */
     opacity: 1;
     transition: opacity 2s ease-out;
+    height: 140px;
+    width: 300px;
 }
 
 .fadeOut {

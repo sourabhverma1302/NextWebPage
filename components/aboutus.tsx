@@ -1,7 +1,9 @@
 import VideoThumb from '@/public/images/hero-image-01.jpg'
-import ModalVideo from '@/components/modal-video'
+import ModalVideo from '@/components/modal-video';
+import aboutUsImage from '../public/images\/about-us-image.jpeg';
+import Image from 'next/image';
 
-export default function Hero() {
+export default function AboutUs() {
   return (
     <section className='mt-[13%]'>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
@@ -39,7 +41,24 @@ export default function Hero() {
               </div>
             </div> */}
           </div>
+          <div>
+            <h1>
+            ​IMPORTER PAN INDIA
+C&F for North India (50+Distributor)
+SUPER STOCKIEST  for Delhi NCR
+DIRECT DISTRIBUTION:-
 
+ALL MODERN TRADE- Delhi & NCR, Hapur, Kulana & Banur, Chandu, Taj Nagar etc and Pan India.
+ALL E-COMMERCE
+ALL GOVERNMENT FORMATS (KENDRIYA BHANDAR, CPC & CSD)
+ALL STANDALONE/REGIONAL MODERN TRADE-Delhi NCR​
+
+
+BRAND LAUNCH SUPPORT in MT, E-Commerce, Government Formats, RMT etc.
+            </h1>
+          </div>
+          {/* <Image src={aboutUsImage} alt='about-us' style={{marginTop:'50px'}}/> */}
+ 
           {/* <ModalVideo
             thumb={VideoThumb}
             thumbWidth={1024}

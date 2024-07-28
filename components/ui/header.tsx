@@ -2,13 +2,16 @@
 import Link from 'next/link'
 import MobileMenu from './mobile-menu';
 // import heroImage from '../../public/images/hero-image-01.jpg';
-import gargLogo from '../../public/images/Logo.png'
+import gargLogo from '../../public/images/Garg_Traders_-_Logo_1_1__1_-removebg-preview.png'
 import Image from 'next/image';
 import './header.css';
 import { useState, useEffect } from 'react';
+import Hero from '../hero';
+import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
   const [isFadedOut, setIsFadedOut] = useState(false);
+  const navigate=useNavigate()
 
   useEffect(() => {
     // Start the fade-out effect when the component mounts
@@ -21,27 +24,29 @@ export default function Header() {
   return (
     <header className="absolute w-full z-30">
       <div className="max-w-8xl px-10">
-        <div className="flex items-center justify-between h-20 mt-10 gap-[200px]">
+        <div className="flex items-center flex-col w-full">
           {/* Site branding */}
+          <div className='flex align-center justify-between w-full'>
           <div className="shrink-0 mr-4" data-aos="fade-up">
             {/* Logo */}
-            <Link href="/" className="block" aria-label="Cruip">
-              <Image src={gargLogo} alt='garg_logo' height={300} width={300} className={`garg_logo`} />
+            <Link href="/" aria-label="Cruip">
+              <Image onClick={()=>{navigate('/')}} src={gargLogo} alt='garg_logo' className={`garg_logo`} />
             </Link>
           </div>
 
 
           {/* Desktop navigation */}
-          <nav className="hidden md:flex md:grow" >
+          <nav className="flex items-center justify-center" >
             {/* Desktop sign in links */}
-            <div className='flex items-center justify-between gap-10 cursor-pointer' data-aos="fade-up">
-              <h1>Home</h1>
-              <h1>About Us</h1>
-              <h1>Distribution Network</h1>
+            <div className='flex items-center gap-12 cursor-pointer' data-aos="fade-up">
+              <h1 onClick={()=>{navigate('/')}}>Home</h1>
+              <h1 onClick={()=>{navigate('/aboutus')}}>About Us</h1>
+              <h1 onClick={()=>{navigate('/distribution-network')}}>Distribution Network</h1>
               <h1>Retail Formats</h1>
               <h1>Contact Us</h1>
             </div>
-            <ul className="flex grow justify-end flex-wrap items-center" data-aos="fade-up">
+          </nav>
+          {/* <ul className="flex flex-wrap items-center justify-center px-20" data-aos="fade-up">
               <li>
                 <Link
                   href="/signin"
@@ -55,8 +60,9 @@ export default function Header() {
                   Sign up
                 </Link>
               </li>
-            </ul>
-          </nav>
+            </ul> */}
+          </div>
+          {/* <Hero/> */}
 
           <MobileMenu />
 
