@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function AboutUs() {
   return (
-    <section className='mt-[13%]'>
+    <section className='mt-[20%]'>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
 
         {/* Illustration behind hero content */}
@@ -42,7 +42,7 @@ export default function AboutUs() {
             </div> */}
           </div>
           <div>
-            <h1>
+            <h1 className='text-center'>
             ​IMPORTER PAN INDIA
 C&F for North India (50+Distributor)
 SUPER STOCKIEST  for Delhi NCR

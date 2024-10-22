@@ -17,7 +17,7 @@ export default function Features() {
             <h2 className="h2 mb-4">The majority our customers do not understand their workflows.</h2>
             <p className="text-xl text-gray-400">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <div className='flex flex-wrap gap-10'>
+          <div className='flex flex-wrap gap-2'>
           <Image src={all} alt='dmart' style={{width:'48%'}} />
           <Image src={all1} alt='dmart' style={{width:'48%'}} />
           <Image src={all2} alt='dmart' style={{width:'48%'}} />

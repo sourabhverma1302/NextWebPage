@@ -3,7 +3,7 @@ import ModalVideo from '@/components/modal-video'
 
 export default function Hero() {
   return (
-    <section className='mt-[13%]'>
+    <section className='mt-[18%]'>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
 
         {/* Illustration behind hero content */}
@@ -30,24 +30,7 @@ export default function Hero() {
               The Company is managed and run by qualified professionals with various industries experience.
               It has an association with many renowned Brands for Indian Market.</p>
             <h1 className="h3 mb-4 text-blue-600" data-aos="fade-up">(A Trusted Name In MT Business Since 2007)</h1>
-            {/* <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Start free trial</a>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="600">
-                <a className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">Learn more</a>
-              </div>
-            </div> */}
           </div>
-
-          {/* <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={1024}
-            thumbHeight={576}
-            thumbAlt="Modal video thumbnail"
-            video="/videos/video.mp4"
-            videoWidth={1920}
-            videoHeight={1080} /> */}
 
         </div>
 
